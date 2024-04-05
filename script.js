@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
@@ -14,4 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         })
         .catch(error => console.error("Error fetching data:", error));
+
+    document.addEventListener("click", function (e) {
+        alert("Tidak Bisa Select Apapun!")
+    });
 });

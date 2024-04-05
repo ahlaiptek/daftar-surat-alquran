@@ -3,14 +3,24 @@ body {
     background-color: #f0f0f0;
 }
 
+.disable-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px;
+    margin: 0
 }
 
 .item {
-    padding: 10px;
+    padding: 10px 0;
     margin: 5px 0;
     background-color: #fff;
     border-radius: 5px;
@@ -18,4 +28,8 @@ ul {
 
 .blur {
     filter: blur(3px); /* Efek buram */
+}
+
+.text-center {
+    text-align: center;
 }
